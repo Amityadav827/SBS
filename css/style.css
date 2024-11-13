@@ -45,7 +45,7 @@ nav {
   padding: 20px 30px;
   width: 100%;
   backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: add a transparent background for visibility */
+  background-color: rgba(0, 0, 0, 0.5);
   margin-top: 35px;
 }
 
@@ -62,8 +62,22 @@ ul.nav-links li {
 }
 
 ul.nav-links li a {
+  display: inline-block;
   color: #fff;
   text-decoration: none;
+}
+
+ul.nav-links li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width .3s;
+}
+
+ul.nav-links li a:hover::after {
+  width: 100%;
 }
 
 /* Hamburger menu styling */
@@ -72,42 +86,6 @@ ul.nav-links li a {
   font-size: 24px;
   color: white;
   cursor: pointer;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  /* Hide nav-links and icon on small screens */
-  ul.nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 70px; /* Adjust to align with nav bar height */
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Background for the mobile menu */
-    padding: 20px 0;
-    gap: 20px;
-  }
-
-  ul.nav-links li {
-    text-align: center;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .fa_icon {
-    display: none;
-  }
-
-  /* Show hamburger menu on small screens */
-  .hamburger {
-    display: block;
-  }
-
-  /* Show the nav links when .active class is added */
-  ul.nav-links.active {
-    display: flex;
-  }
 }
 
 /* Navbar section CSS end */
@@ -241,9 +219,29 @@ p.nav_notification {
   color: #000;
   text-decoration: none;
   font-weight: bold;
-  border-bottom: 2px solid #000;
+}
+
+
+.text-section a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
   padding-bottom: 3px;
 }
+
+.text-section a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+
+.text-section a:hover::after {
+  width: 100%;
+}
+
 /* container end */
 
 
@@ -274,17 +272,25 @@ p.nav_notification {
   text-align: center;
 }
 
-.card::before {
-  content: attr(data-title);
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: white;
-  font-size: 1.5rem;
+.card a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
 }
+
+.card a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width .3s;
+}
+
+.card a:hover::after {
+  width: 100%;
+}
+
 
 .card.dresses {
   background-image: url('../img/dress_img.jpg');
@@ -405,7 +411,18 @@ p.nav_notification {
   text-decoration: none;
   font-weight: bold;
   border: 1px solid white;
+  /* transition: width .3s; */
+  transition: background-color 1s ease, color 1s ease;
 }
+
+.text-overlay a:hover{
+  background-color: #e2c387;
+  color: #ffffff;
+  
+}
+
+
+
 /* raffia img end */
 
 
@@ -434,6 +451,42 @@ section.island_palette_sec img {
 .island_palette_img_sec a {
   text-transform: uppercase;
   color: #7E7D7D;
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+.island_palette_img_sec a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #7E7D7D;
+  transition: width .3s;
+}
+
+.island_palette_img_sec a:hover::after {
+  width: 100%;
+}
+
+
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
 }
 
 section.island_palette_sec p {
@@ -481,6 +534,25 @@ section.island_palette_sec p {
   letter-spacing: 0.04em;
   width: 90%;
 }
+
+.needledust_text_section a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.needledust_text_section a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+.needledust_text_section a:hover::after {
+  width: 100%;
+}
+
 
 .read-more {
   font-weight: bold;
@@ -577,17 +649,78 @@ section.island_palette_sec p {
 .text-container a {
   text-decoration: none;
   color: #333;
-  border-bottom: 1px solid #333;
+  /* border-bottom: 1px solid #333; */
   font-size: 20px;
   font-weight: 450;
   line-height: 29.02px;
   letter-spacing: 0.04em;
   text-align: center;
+  display: inline-block;
 }
 
-.text-container a:hover {
-  color: #000;
-  border-bottom: 1px solid #000;
+.text-container a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #333;
+  transition: width .3s;
 }
+
+.text-container a:hover::after {
+  width: 100%;
+}
+
 /* text container end */
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+
+.line {
+  fill: none;
+  stroke: white; /* Change this to white */
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+
 

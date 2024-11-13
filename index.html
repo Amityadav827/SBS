@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link href="https://fonts.cdnfonts.com/css/arquitecta" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- top nav bar start -->
     <section class="top-bar-sec">
@@ -43,7 +45,17 @@
             <a class="shopping-bag" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
         </div>
         <div class="hamburger">
-            <i class="fa fa-bars"></i>
+            <button class="menu"
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                aria-label="Main Menu">
+                <svg width="50" height="0" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
         </div>
     </nav>
     <!-- nav end -->
@@ -98,16 +110,16 @@
     <!-- section start -->
 
     <section class="card_img">
-        <div class="card dresses" data-title="Dresses"></div>
-        <div class="card tops" data-title="Tops"></div>
-        <div class="card shirts" data-title="Shirts"></div>
+        <div class="card dresses" data-title="Dresses"><a href="#">Dresses</a></div>
+        <div class="card tops" data-title="Tops"><a href="#">Tops</a></div>
+        <div class="card shirts" data-title="Shirts"><a href="#">Shirts</a></div>
     </section>
     <!-- section end -->
 
 
     <!-- section start -->
     <div class="image_grid_bg">
-        <div class="image_grid_text"style="padding-bottom: 50px;">
+        <div class="image_grid_text" style="padding-bottom: 50px;">
             <h1>FACES OF ISLAND</h1>
             <img src="img/foi_line_img.png" alt="" style="width: 40px;height: 4.78px;margin: 10px;">
             <p>Signify diversity! The #SANDWomen & #SANDMen are from different parts of the world, and yet by common
@@ -224,4 +236,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

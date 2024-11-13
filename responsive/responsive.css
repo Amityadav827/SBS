@@ -148,6 +148,36 @@
         font-size: 14px;
     }
 
+    ul.nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px; 
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px 0;
+        gap: 20px;
+      }
+    
+      ul.nav-links li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+      }
+    
+      .fa_icon {
+        display: none;
+      }
+    
+      .hamburger {
+        display: block;
+      }
+    
+      ul.nav-links.active {
+        display: flex;
+      }
+
 
 }
 
@@ -324,6 +354,36 @@
     .text-container a {
         font-size: 14px;
     }
+
+    ul.nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px; 
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px 0;
+        gap: 20px;
+      }
+    
+      ul.nav-links li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+      }
+    
+      .fa_icon {
+        display: none;
+      }
+    
+      .hamburger {
+        display: block;
+      }
+    
+      ul.nav-links.active {
+        display: flex;
+      }
 }
 
 @media (max-width: 991px) {
@@ -356,6 +416,47 @@
 
     .image-section {
         flex-direction: column;
+    }
+
+    ul.nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px; 
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        padding: 20px 0;
+        gap: 20px;
+      }
+    
+      ul.nav-links li {
+        text-align: start;
+        width: 100%;
+        padding: 10px 0;
+        margin-left: 50px;
+      }
+    
+      .fa_icon {
+        display: none;
+      }
+    
+      .hamburger {
+        display: block;
+        position: relative;
+      }
+    
+      ul.nav-links.active {
+        display: flex;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+      }
+
+      p.nav_notification {
+        top: 0px;
+        left: 55px;
+        right: auto;
     }
 
 
