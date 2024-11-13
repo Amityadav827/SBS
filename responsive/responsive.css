@@ -1,0 +1,405 @@
+@media (max-width: 575px) {
+
+    .top-bar-sec {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    section.sbs_banner_section {
+        top: 50px;
+    }
+
+    section.sbs_banner_section img {
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+    .island_24_sec {
+        padding: 0px;
+        top: 50px;
+    }
+
+    .island_24_img {
+        margin: 15px;
+    }
+
+    .island_24_para {
+        margin: 15px;
+    }
+
+    .island_24_para p {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .container {
+        position: relative;
+        top: 50px;
+    }
+
+    .card_img {
+        padding: 0px;
+        position: relative;
+        top: 50px;
+    }
+
+    .image_grid_bg {
+        position: relative;
+        top: 50px;
+        margin: 25px 0px;
+        padding: 25px;
+    }
+
+    .image_grid_bg p {
+        width: 100%;
+    }
+
+    .image-grid {
+        margin: 0% 0%;
+    }
+
+    .stand_sec {
+        display: inline-block;
+    }
+
+    .needledust_sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    .needledust_text_section {
+        margin-right: 0px;
+        max-width: 100%;
+
+    }
+
+    .needledust_text_section p {
+        width: 100%;
+    }
+
+    .needledust_image_section {
+        margin-top: 50px;
+    }
+
+    .needledust_image_section img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .needledust_text_section h2 {
+        font-size: 20px;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .text-overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-overlay p {
+        font-size: 0.8rem;
+    }
+
+    .text-overlay a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .island_palette_img_sec {
+        flex-direction: row;
+        gap: 10px;
+        margin: 20px;
+    }
+
+    .island_palette_img_sec a {
+        font-size: xx-small;
+    }
+
+    section.island_palette_sec p {
+        font-size: 20px;
+    }
+
+    section.island_palette_sec img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .text-container h2 {
+        font-size: 20px;
+    }
+
+    .text-container p,
+    .text-container a {
+        font-size: 14px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+
+    .top-bar-sec {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    section.sbs_banner_section {
+        top: 50px;
+    }
+
+    section.sbs_banner_section img {
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+    .island_24_sec {
+        padding: 0px;
+        top: 50px;
+    }
+
+    .island_24_img {
+        margin: 15px;
+    }
+
+    .island_24_para {
+        margin: 15px;
+    }
+
+    .island_24_para p {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .container {
+        position: relative;
+        top: 50px;
+    }
+
+    .card_img {
+        padding: 0px;
+        position: relative;
+        top: 50px;
+    }
+
+    .image_grid_bg {
+        position: relative;
+        top: 50px;
+        margin: 25px 0px;
+        padding: 25px;
+    }
+
+    .image_grid_bg p {
+        width: 100%;
+    }
+
+    .image-grid {
+        margin: 0% 0%;
+    }
+
+    .stand_sec {
+        display: inline-block;
+    }
+
+    .needledust_sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    .needledust_text_section {
+        margin-right: 0px;
+        max-width: 100%;
+    }
+
+    .needledust_text_section p {
+        width: 100%;
+    }
+
+
+    .needledust_image_section {
+        margin-top: 50px;
+    }
+
+    .needledust_image_section img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .needledust_text_section h2 {
+        font-size: 20px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-section {
+        flex-direction: column;
+    }
+
+    .image-section img {
+        width: 100%;
+    }
+
+    .text-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .text-overlay p {
+        font-size: 0.9rem;
+    }
+
+    .island_palette_img_sec {
+        flex-direction: row;
+        gap: 10px;
+        margin: 20px;
+    }
+
+    .island_palette_img_sec a {
+        font-size: xx-small;
+    }
+
+
+    section.island_palette_sec p {
+        font-size: 24px;
+    }
+
+    section.island_palette_sec img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .text-section {
+        margin: 0 0 20px 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .text-container h2 {
+        font-size: 20px;
+    }
+
+    .text-container p,
+    .text-container a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .top-bar-sec {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .island_24_para p {
+        width: 80%;
+    }
+
+    .image_grid_bg p {
+        width: 80%;
+    }
+
+    .needledust_image_section {
+        margin-top: 50px;
+    }
+
+    .needledust_text_section {
+        text-align: center;
+    }
+
+    .image-section {
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 1199px) {
+
+    .top-bar-sec {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .island_24_para p {
+        width: 80%;
+    }
+
+    .image_grid_bg p {
+        width: 80%;
+    }
+
+    .needledust_image_section {
+        margin-top: 50px;
+    }
+
+    .needledust_text_section {
+        text-align: center;
+    }
+
+    .image-section {
+        flex-direction: column;
+    }
+
+    ul.nav-links {
+        gap: 15px;
+    }
+
+    .needledust_image_section img {
+        width: 100%;
+    }
+
+
+}
