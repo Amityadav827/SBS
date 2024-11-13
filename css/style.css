@@ -12,6 +12,10 @@ body {
   font-family: 'Arquitecta', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* top-bar-sec start */
 .top-bar-sec {
